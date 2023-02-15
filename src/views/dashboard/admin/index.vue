@@ -2,9 +2,9 @@
   <div class="dashboard-editor-container">
     <github-corner class="github-corner" />
 
-    <panel-group @handleSetLineChartData="handleSetLineChartData" />
+    <!-- <panel-group @handleSetLineChartData="handleSetLineChartData" /> -->
 
-    <el-row style="background:#fff;padding:16px 16px 0;margin-bottom:32px;">
+    <!-- <el-row style="background:#fff;padding:16px 16px 0;margin-bottom:32px;">
       <line-chart :chart-data="lineChartData" />
     </el-row>
 
@@ -36,20 +36,20 @@
       <el-col :xs="{span: 24}" :sm="{span: 12}" :md="{span: 12}" :lg="{span: 6}" :xl="{span: 6}" style="margin-bottom:30px;">
         <box-card />
       </el-col>
-    </el-row>
+    </el-row> -->
   </div>
 </template>
 
 <script>
 import GithubCorner from '@/components/GithubCorner'
-import PanelGroup from './components/PanelGroup'
-import LineChart from './components/LineChart'
-import RaddarChart from './components/RaddarChart'
-import PieChart from './components/PieChart'
-import BarChart from './components/BarChart'
-import TransactionTable from './components/TransactionTable'
-import TodoList from './components/TodoList'
-import BoxCard from './components/BoxCard'
+// import PanelGroup from './components/PanelGroup'
+// import LineChart from './components/LineChart'
+// import RaddarChart from './components/RaddarChart'
+// import PieChart from './components/PieChart'
+// import BarChart from './components/BarChart'
+// import TransactionTable from './components/TransactionTable'
+// import TodoList from './components/TodoList'
+// import BoxCard from './components/BoxCard'
 
 const lineChartData = {
   newVisitis: {
@@ -73,15 +73,15 @@ const lineChartData = {
 export default {
   name: 'DashboardAdmin',
   components: {
-    GithubCorner,
-    PanelGroup,
-    LineChart,
-    RaddarChart,
-    PieChart,
-    BarChart,
-    TransactionTable,
-    TodoList,
-    BoxCard
+    GithubCorner
+    // PanelGroup,
+    // LineChart,
+    // RaddarChart,
+    // PieChart,
+    // BarChart,
+    // TransactionTable,
+    // TodoList,
+    // BoxCard
   },
   data() {
     return {
